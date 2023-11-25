@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="currencyConvertor.css" />
+    <script src="currencyConvertor.js"></script>
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="header-container">
+      <div class="header-inner">
+        <h2>Currency Converter</h2>
+        <h4>Convert USD to CAD or vice versa at the real exchange rate</h4>
+      </div>
+    </div>
+    <div class="main-wrapper">
+      <div class="main-inner">
+        <div id="conversion-result"></div>
+        <div class="flex">
+          <div>
+            <label for="usdAmount">USD Amount:</label>
+            <input type="text" id="usdAmount" placeholder="Enter USD" />
+          </div>
+          <div class="convert-icon">
+            <span class="exchange-icon"><i class="fa fa-exchange"></i></span>
+          </div>
+          <div>
+            <label for="cadAmount">CAD Amount:</label>
+            <input type="text" id="cadAmount" placeholder="Enter CAD" />
+          </div>
+        </div>
+        <div class="main-inner text-center btn-container">
+          <button onclick="convertToCAD()" class="convert-btn">
+            Convert to CAD
+          </button>
+          <button onclick="convertToUSD()" class="convert-btn">
+            Convert to USD
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
